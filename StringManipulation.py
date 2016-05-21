@@ -1,6 +1,11 @@
 #Demo for String function
 
 name="regis charles"
+newname=name[1]
+print(newname ,end='')
+for x in name:
+    print(x)
+
 capital=name.capitalize()
 lowercase=name.lower()
 uppercase=name.upper()
