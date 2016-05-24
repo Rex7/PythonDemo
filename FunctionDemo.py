@@ -1,3 +1,11 @@
+#####Global and local variable demo
+val=69
+def glob():
+    global val
+    val=96
+    print(val)
+glob()
+print(val)
 #Function type and way it works
 def printmyname(name,age):
     print("name of the person is:",name,age)
@@ -41,3 +49,11 @@ print("addition of 20 and 10 :",cal(20,10,0))
 print("sub of 20 and 10 :",cal(20,10,1))
 print("multiplication of 20 and 10 :",cal(20,10,2))
 print("division of 20 and 10 :",int(cal(20,10,3)))
+#variable argumnet demo
+def var(*my):
+    for val in my:
+        print(val)
+    return
+var(120,36)
+addition=lambda no1,no2:no1+no2
+print("Addition of two numbers",addition(18,22))
