@@ -17,7 +17,11 @@ print(ans)
 def anynumber(*av):
     for i in av:
         print(i)
-
+#function if doesnt return anything explicitly then it will return None
+def ret():
+    pass
+s=ret()
+print(s)
 #variable argument
 ar=(18,22)
 anynumber(ar)
