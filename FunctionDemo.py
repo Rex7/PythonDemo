@@ -25,3 +25,19 @@ print(s)
 #variable argument
 ar=(18,22)
 anynumber(ar)
+#calculator
+def cal(a,b,flag):
+    if(flag==0):
+        return a+b
+    elif(flag==1):
+        return a-b
+    elif(flag==2):
+        return a*b
+    elif(flag==3):
+        return a/b
+    else:
+        return
+print("addition of 20 and 10 :",cal(20,10,0))
+print("sub of 20 and 10 :",cal(20,10,1))
+print("multiplication of 20 and 10 :",cal(20,10,2))
+print("division of 20 and 10 :",int(cal(20,10,3)))
