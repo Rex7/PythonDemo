@@ -1,4 +1,4 @@
-#ListExample
+# List Example
 no_of_element = int(input("Enter no of element in list"))
 # assigning an empty list
 old_list = []
@@ -13,8 +13,12 @@ def replace(index ,val ):
 replace(len(old_list)-1,"rex")
 """ assigning old list to new list in which if new list is changed then
 the values of old list also changes and vice versa"""
-new_list=old_list
+new_list = old_list
 new_list.append("babe")
 old_list.append("last")
+# shallow copy of entire list using slice operator
+shallow_copy_list = new_list[:]
+shallow_copy_list.append("shallow_copy")
+print(shallow_copy_list)
 print(new_list)
 print(old_list)
