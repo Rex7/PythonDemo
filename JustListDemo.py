@@ -1,12 +1,20 @@
 #ListExample
-n=int(input("Enter no of element in list"))
-m=[]
-for i in range(n):
-    s=input("Enter your element in list")
-    m.append(s)
-    print("Entered element in list{0}".format(m))
-print("Element in List{0}".format(m),end='')
+no_of_element = int(input("Enter no of element in list"))
+# assigning an empty list
+old_list = []
+for i in range(no_of_element):
+    s = input("Enter your element in list")
+    old_list.append(s)
+    print("Entered element in list{0}".format(old_list))
+print("Element in List{0}".format(old_list), end='')
 def replace(index ,val ):
-    m[index] = val
-    print(m)
-replace(len(m)-1,"rex")
+    old_list[index] = val
+    print(old_list)
+replace(len(old_list)-1,"rex")
+""" assigning old list to new list in which if new list is changed then
+the values of old list also changes and vice versa"""
+new_list=old_list
+new_list.append("babe")
+old_list.append("last")
+print(new_list)
+print(old_list)
