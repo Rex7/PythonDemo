@@ -12,8 +12,3 @@ class Student:
 
     def display(self):
         print("Name :{0} \n Roll Number:{1}".format(self.name, self.roll_number))
-
-
-
-
-
